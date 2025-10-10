@@ -87,10 +87,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen bg-slate-50 dark:bg-neutral-900 py-20 text-black dark:text-white" id="contact">
-      <div className="max-w-6xl mx-auto px-6">
-        <h1 className="text-4xl md:text-7xl font-medium mb-12 text-center md:text-left">Contact</h1>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+   <section className="overflow-hidden bg-slate-50 dark:bg-neutral-900 py-20 text-black dark:text-white" id="contact">
+  <div className="w-full max-w-6xl md:px-0 px-4 mx-auto">
+    <h1 className="text-3xl md:text-7xl font-medium mb-12 text-center md:text-left">Contact</h1>
+    <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
 
           {/* Left Section */}
           <div className="md:w-1/2 text-center md:text-left">
@@ -98,11 +98,11 @@ const Contact = () => {
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-2xl md:text-5xl font-bold mb-6"
             >
               Let’s Work <span className="text-[#7d2ae8]">Together!</span>
             </motion.h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto md:mx-0 mb-12">
+            <p className="text-gray-600 dark:text-gray-400 md:text-base text-sm max-w-md mx-auto md:mx-0 mb-12">
               I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
             <div className="flex justify-center md:justify-start gap-6 text-3xl">
@@ -124,7 +124,7 @@ const Contact = () => {
           {/* Right Section - Form */}
           <motion.form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-5 md:w-1/2 w-full bg-white/10 dark:bg-neutral-800/50 p-8 rounded-2xl shadow-lg backdrop-blur-md"
+            className="flex flex-col gap-5 md:w-1/2 w-full bg-white/10 dark:bg-neutral-800/50 md:p-8 p-5 rounded-2xl shadow-lg backdrop-blur-md"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
