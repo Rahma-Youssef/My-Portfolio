@@ -89,7 +89,7 @@ const Contact = () => {
   return (
    <section className="overflow-hidden bg-slate-50 dark:bg-neutral-900 py-20 text-black dark:text-white" id="contact">
   <div className="w-full max-w-6xl md:px-0 px-4 mx-auto">
-    <h1 className="text-3xl md:text-7xl font-medium mb-12 text-center md:text-left">Contact</h1>
+    <h1 className="text-4xl md:text-6xl font-medium mb-12">Contact</h1>
     <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
 
           {/* Left Section */}
