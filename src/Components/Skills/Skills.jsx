@@ -14,7 +14,6 @@ const Skills = () => {
     "tailwindcss",
     "bootstrap",
     "sass",
-    "redux",
     "npm",
     "nextdotjs",
     "reactrouter",
