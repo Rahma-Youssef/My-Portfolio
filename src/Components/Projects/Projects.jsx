@@ -64,7 +64,7 @@ const Projects = () => {
       imageSrc: FreshCArtImg,
       altText: "FreshCart App",
       captionText: "FreshCart App",
-      technologies: "Next.js | Tailwind CSS | App Router | Context API ",
+      technologies: "Next.js | Tailwind CSS | TypeScript |  App Router | Context API ",
       description: `A fast and modern e-commerce web app built with Next.js and Tailwind CSS.Users can browse products, manage their cart, and complete checkout with a smooth and responsive experience`,
       liveDemo: "https://freshcart-virid.vercel.app/",
       githubRepo: "https://github.com/Rahma-Youssef/freshcart"
@@ -80,7 +80,6 @@ const Projects = () => {
       <div className=" md:w-[80%] md:p-0 px-10  mx-auto">
         <h1 className="text-4xl md:text-6xl font-medium mb-16 ">
           Projects
-
         </h1>
 
         <div className="flex flex-col gap-28 mt-5">
