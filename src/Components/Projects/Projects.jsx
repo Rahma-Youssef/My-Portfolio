@@ -74,8 +74,9 @@ const Projects = () => {
 
   return (
     <section
-      className="bg-slate-50 dark:bg-neutral-900 py-20 overflow-hidden text-black dark:text-white"
       id="projects"
+      className="bg-slate-50 dark:bg-neutral-900 py-20 overflow-hidden text-black dark:text-white"
+    
     >
       <div className=" md:w-[80%] md:p-0 px-10  mx-auto">
         <h1 className="text-4xl md:text-6xl font-medium mb-16 ">

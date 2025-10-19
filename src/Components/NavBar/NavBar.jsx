@@ -41,26 +41,31 @@ const NavBar = () => {
   }, []);
 
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    let observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActiveSection(entry.target.id);
-        });
-      },
-      { threshold: 0.3 }
-    );
+ useEffect(() => {
+  const sections = document.querySelectorAll("section[id]");
 
-    sections.forEach((section) => observer.observe(section));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: "-20% 0px -60% 0px", // 👈 ده أهم تعديل
+      threshold: 0,
+    }
+  );
 
-    return () => {
-      if (observer) {
-        sections.forEach((section) => observer.unobserve(section));
-        observer.disconnect();
-      }
-    };
-  }, []);
+  sections.forEach((section) => observer.observe(section));
+
+  return () => {
+    sections.forEach((section) => observer.unobserve(section));
+  };
+}, []);
+
 
   return (
     <nav
